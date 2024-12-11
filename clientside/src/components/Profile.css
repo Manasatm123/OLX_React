@@ -1,0 +1,138 @@
+
+.body-profile {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+  margin: 0;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.left-side {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.left-side .form-group {
+  margin-bottom: 20px;
+}
+
+.left-side .image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.left-side div {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.left-side .edit-btn,
+.left-side .create-btn,
+.left-side .delete-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00695c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.left-side .delete-btn {
+  background-color: #d32f2f;
+}
+
+.left-side button:hover {
+  background-color: #004d40;
+}
+
+.left-side .delete-btn:hover {
+  background-color: #b71c1c;
+}
+
+
+.right-side {
+  flex: 2;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.right-side .sell-btn button {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  background-color: #00695c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.right-side .sell-btn button:hover {
+  background-color: #004d40;
+}
+
+.right-side .right-post-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.show-post-card {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.post-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.right-side div {
+  text-align: center;
+  color: #777;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .show-post-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

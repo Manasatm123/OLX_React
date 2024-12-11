@@ -1,0 +1,95 @@
+
+.product-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .product-form div {
+    margin-bottom: 15px;
+  }
+  
+  .product-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .product-form input[type="text"],
+  .product-form textarea,
+  .product-form select,
+  .product-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  .product-form input:focus,
+  .product-form textarea:focus,
+  .product-form select:focus {
+    outline: none;
+    border-color: #00695c;
+    background-color: #f4f4f9;
+  }
+  
+  .product-form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .product-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #00695c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-form button:hover {
+    background-color: #004d40;
+  }
+  
+ 
+  .image-previews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .image-previews img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  @media (max-width: 768px) {
+    .product-form {
+      padding: 15px;
+    }
+  
+    .product-form button {
+      font-size: 14px;
+    }
+  
+    .image-previews img {
+      max-width: 80px;
+    }
+  }
+  

@@ -1,0 +1,87 @@
+
+.edit-data-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+
+  .edit-data-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .edit-data-form h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fdfdfd;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #00695c;
+    background-color: #fff;
+  }
+  
+  
+  .submit-button {
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00695c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #004d40;
+  }
+  
+
+  @media (max-width: 768px) {
+    .edit-data-container {
+      padding: 15px;
+    }
+  
+    .edit-data-form h2 {
+      font-size: 20px;
+    }
+  
+    .form-group input {
+      font-size: 13px;
+    }
+  
+    .submit-button {
+      font-size: 14px;
+    }
+  }
+  
